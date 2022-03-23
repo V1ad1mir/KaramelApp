@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/backgrd"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="right">
+
+        <ImageView
+            android:id="@+id/ImageLife"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/life_3"
+            >
+
+        </ImageView>
+
+    </RelativeLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+
+        >>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/title"
+                android:text="@string/game_title"
+                android:textSize="50dp"
+                style="@style/all_text"/>
+
+
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+
+        android:layout_marginBottom="2dp"
+        android:text="@string/score"
+        style="@style/all_text"
+        android:textSize="35dp"
+
+        />
+    <TextView
+        android:id="@+id/score"
+
+        android:layout_marginBottom="2dp"
+        style="@style/all_text"
+        android:textSize="35dp"
+
+        />
+</LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingVertical="5px">
+
+                <!-- first line -->
+
+
+                <LinearLayout
+                    android:layout_marginTop="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageGame"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/style_img"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/nok2" />
+
+                    <ImageView
+                        android:id="@+id/imageGame2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/style_img"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/nok3" />
+                </LinearLayout>
+
+                <!-- second line -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageGame3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/style_img"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/nok4" />
+
+                    <ImageView
+                        android:id="@+id/imageGame4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/style_img"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/nok5" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/txt"
+            android:text="@string/Back"
+            android:textColor="@color/butt" />
+
+    </LinearLayout>
+
+
+
+
+</android.widget.RelativeLayout>
+
+

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/backgrd"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/title"
+            android:text="@string/title"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:autoSizeTextType="uniform"
+            android:autoSizeStepGranularity="2sp"
+            android:autoSizeMinTextSize="40dp"
+            android:autoSizeMaxTextSize="100dp"
+            android:layout_weight="1"
+            style="@style/all_text"
+
+
+            />
+
+
+        <ImageView
+            android:id="@+id/logoCat"
+            android:layout_width="wrap_content"
+            android:layout_height="170sp"
+            android:layout_below="@id/title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10sp"
+            android:hint="my cat"
+            android:src="@drawable/cat_n"
+            android:layout_weight="1"
+             />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_weight="1">
+
+
+            <Button
+                android:id="@+id/bGallery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/b1"
+                android:layout_marginHorizontal="30sp"
+                android:layout_marginTop="5sp"
+                android:backgroundTint="@color/txt"
+                android:padding="10dp"
+                android:text="@string/buttG"
+                android:textColor="@color/butt"
+                android:textSize="35dp"
+                android:textAllCaps="false"/>
+
+
+            <Button
+                android:id="@+id/bGame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bGallery"
+                android:layout_marginHorizontal="30sp"
+                android:layout_marginTop="5sp"
+                android:backgroundTint="@color/txt"
+                android:padding="10dp"
+                android:text="@string/bGame"
+                android:textColor="@color/butt"
+                android:textSize="35dp"
+                tools:ignore="TextContrastCheck"
+                android:textAllCaps="false"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp">
+
+
+            <TextView
+                style="@style/all_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/until"
+                />
+            <TextView
+                style="@style/all_text"
+                android:id="@+id/howMany"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="date"
+                />
+            <TextView
+                style="@style/all_text"
+                android:text="@string/days"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</FrameLayout>

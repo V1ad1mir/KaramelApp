@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="BG">#F76F8E</color>
+    <color name="txt">#ffead0</color>
+    <color name="butt">#96616B</color>
+    <color name="teal_700">#FF37505C</color>
+    <color name="black">#113537</color>
+    <color name="real_black">#000000</color>
+    <color name="caramel">#DFD2CA</color>
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">חתול שלי</string>
+    <string name="title">חתול שלי</string>
+    <string name="butInfo">תמונה אחרת</string>
+    <string name="gameName">איפה קראמל?</string>
+    <string name="buttG">גלריה</string>
+    <string name="bGame">משחק</string>
+    <string name="score"> נקודות </string>
+    <string name="winner">זכית במשחק שלי</string>
+    <string name="lose">הפסדת...</string>
+    <string name="Back">לחזור למסך ראשי</string>
+    <string name="language">עברית</string>
+    <string name="game_title">משחק</string>
+    <string name="back">לחזור</string>
+    <string name="until"> עד יום החתול נשאר </string>
+    <string name="days">ימים</string>
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">My cat</string>
+    <string name="title">My cat</string>
+    <string name="butInfo">Other picture</string>
+    <string name="gameName">Where is karamel?</string>
+    <string name="buttG">Gallery</string>
+    <string name="bGame">Game</string>
+    <string name="score">Score</string>
+    <string name="winner">You Winner!!!</string>
+    <string name="lose">Sorry....you lose</string>
+    <string name="Back">Back to start</string>
+    <string name="language">English</string>
+    <string name="game_title">Game</string>
+    <string name="back">Back</string>
+    <string name="until">until "cat" day left </string>
+    <string name="days">days</string>
+</resources>

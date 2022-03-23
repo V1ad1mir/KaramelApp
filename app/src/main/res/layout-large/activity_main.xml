@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/backgrd"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:text="@string/title"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:autoSizeTextType="uniform"
+            android:autoSizeStepGranularity="1sp"
+            android:autoSizeMinTextSize="200dp"
+            android:autoSizeMaxTextSize="15000dp"
+            android:gravity="center"
+            style="@style/all_text"
+
+
+            />
+
+        <ImageView
+            android:id="@+id/logoCat"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_below="@id/title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10sp"
+            android:hint="my cat"
+            android:src="@drawable/cat_n"
+             />
+
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/bGallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/b1"
+        android:layout_marginHorizontal="30sp"
+        android:layout_marginTop="15sp"
+        android:backgroundTint="@color/txt"
+        android:padding="16dp"
+        android:text="@string/buttG"
+        android:textColor="@color/butt"
+        android:textSize="38dp"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/bGame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bGallery"
+        android:layout_marginHorizontal="30sp"
+        android:layout_marginTop="15sp"
+        android:backgroundTint="@color/txt"
+        android:padding="16dp"
+        android:text="@string/bGame"
+        android:textColor="@color/butt"
+        android:textSize="38dp"
+        tools:ignore="TextContrastCheck"
+        android:textAllCaps="false"/>
+
+</LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</android.widget.RelativeLayout>

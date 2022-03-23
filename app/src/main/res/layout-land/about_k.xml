@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/backgrd"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="right">
+
+
+
+    </RelativeLayout>
+
+
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+
+    <!--Block 1-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.8"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/ImageLife"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="20dp"
+            android:src="@drawable/life_3"
+
+            />
+
+
+
+
+    </LinearLayout>
+
+
+    <!--Block 2-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.2"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <!-- first line -->
+
+                <LinearLayout
+                    android:layout_marginTop="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/imageGame"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="2dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/style_img"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/nok2" />
+
+                    <ImageView
+                        android:id="@+id/imageGame2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="2dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/style_img"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/nok3" />
+                </LinearLayout>
+
+                <!-- second line -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="2dp"
+                    android:orientation="horizontal"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/imageGame3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="2dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/style_img"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/nok4" />
+
+                    <ImageView
+                        android:id="@+id/imageGame4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="2dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/style_img"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/nok5" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--Block 3-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:text="@string/game_title"
+            android:textSize="50dp"
+            style="@style/all_text"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_marginBottom="2dp"
+                android:text="@string/score"
+                style="@style/all_text"
+                android:textSize="35dp"
+
+                />
+            <TextView
+                android:id="@+id/score"
+                android:layout_marginBottom="2dp"
+                style="@style/all_text"
+                android:textSize="35dp"
+
+                />
+        </LinearLayout>
+
+        <Button
+            android:layout_marginTop="120dp"
+            android:id="@+id/buttonBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/txt"
+            android:text="@string/Back"
+            android:textColor="@color/butt"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+</android.widget.RelativeLayout>
+
+

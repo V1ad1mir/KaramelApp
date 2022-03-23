@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgrd">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/title"
+            android:text="@string/buttG"
+            style="@style/all_text"
+            android:textSize="70dp"
+
+
+            />
+
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="wrap_content"
+            android:layout_height="320sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:hint="my cat"
+            android:src="@drawable/cat_0"
+             />
+
+
+        <Button
+            android:id="@+id/b1"
+            android:layout_width="match_parent"
+            android:layout_below="@id/image2"
+            android:layout_marginTop="20sp"
+            android:backgroundTint="@color/txt"
+            android:text="@string/butInfo"
+            android:textColor="@color/butt"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30sp"
+            android:padding="16dp"
+            android:textSize="38dp"
+            android:textAllCaps="false"
+
+
+
+
+
+
+            />
+
+        <Button
+            android:id="@+id/buttonBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Back"
+            android:textColor="@color/butt"
+            android:backgroundTint="@color/txt"/>
+
+
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
