@@ -95,6 +95,7 @@
 
         <TextView
             style="@style/all_text"
+            android:textSize="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/until"
@@ -102,6 +103,7 @@
             />
 
         <TextView
+            android:textSize="20dp"
             android:id="@+id/howMany"
             style="@style/all_text"
             android:layout_width="wrap_content"
@@ -109,6 +111,7 @@
             android:text="date" />
 
         <TextView
+            android:textSize="20dp"
             style="@style/all_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

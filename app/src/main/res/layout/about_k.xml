@@ -25,8 +25,6 @@
     </RelativeLayout>
 
 
-
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -45,34 +43,34 @@
 
             <TextView
                 android:id="@+id/title"
+                style="@style/all_text"
                 android:text="@string/game_title"
-                android:textSize="50dp"
-                style="@style/all_text"/>
+                android:textSize="50dp" />
 
 
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
-<LinearLayout
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal">
+                <TextView
 
-    <TextView
+                    style="@style/all_text"
+                    android:layout_marginBottom="2dp"
+                    android:text="@string/score"
+                    android:textSize="35dp"
 
-        android:layout_marginBottom="2dp"
-        android:text="@string/score"
-        style="@style/all_text"
-        android:textSize="35dp"
+                    />
 
-        />
-    <TextView
-        android:id="@+id/score"
+                <TextView
+                    android:id="@+id/score"
 
-        android:layout_marginBottom="2dp"
-        style="@style/all_text"
-        android:textSize="35dp"
+                    style="@style/all_text"
+                    android:layout_marginBottom="2dp"
+                    android:textSize="35dp"
 
-        />
-</LinearLayout>
+                    />
+            </LinearLayout>
 
 
             <LinearLayout
@@ -85,9 +83,9 @@
 
 
                 <LinearLayout
-                    android:layout_marginTop="25dp"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_marginTop="25dp"
                     android:orientation="horizontal">
 
                     <ImageView
@@ -148,7 +146,7 @@
             android:id="@+id/buttonBack"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="8dp"
             android:backgroundTint="@color/txt"
             android:text="@string/Back"
             android:textColor="@color/butt" />
