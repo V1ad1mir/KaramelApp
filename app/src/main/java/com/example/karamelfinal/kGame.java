@@ -48,9 +48,9 @@ public class kGame extends AppCompatActivity {
 
     //soundpool code start
     SoundPool soundPool;
-    private AudioManager audioManager;
+    AudioManager audioManager;
     // Maximum sound stream.
-    private static final int MAX_STREAMS = 3;
+    private static final int MAX_STREAMS = 4;
 
     // Stream type.
     private static final int streamType = AudioManager.STREAM_MUSIC;

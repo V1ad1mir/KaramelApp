@@ -44,7 +44,7 @@
 
 
 <LinearLayout
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal">
 
@@ -56,11 +56,12 @@
         android:layout_marginHorizontal="30sp"
         android:layout_marginTop="15sp"
         android:backgroundTint="@color/txt"
-        android:padding="16dp"
+        android:padding="20dp"
         android:text="@string/buttG"
         android:textColor="@color/butt"
-        android:textSize="38dp"
-        android:textAllCaps="false"/>
+        android:textSize="50dp"
+        android:textAllCaps="false"
+        android:layout_weight="1"/>
 
     <Button
         android:id="@+id/bGame"
@@ -70,14 +71,48 @@
         android:layout_marginHorizontal="30sp"
         android:layout_marginTop="15sp"
         android:backgroundTint="@color/txt"
-        android:padding="16dp"
+        android:padding="20dp"
         android:text="@string/bGame"
         android:textColor="@color/butt"
-        android:textSize="38dp"
+        android:textSize="50dp"
         tools:ignore="TextContrastCheck"
-        android:textAllCaps="false"/>
+        android:textAllCaps="false"
+        android:layout_weight="1"/>
 
 </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                style="@style/all_text"
+                android:textSize="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/until"
+
+                />
+
+            <TextView
+                android:textSize="50dp"
+                android:id="@+id/howMany"
+                style="@style/all_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 />
+
+            <TextView
+                android:textSize="50dp"
+                style="@style/all_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/days" />
+        </LinearLayout>
 
 
 

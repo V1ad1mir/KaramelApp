@@ -88,13 +88,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|center_horizontal"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="10dp"
         android:orientation="horizontal">
 
 
         <TextView
             style="@style/all_text"
-            android:textSize="20dp"
+            android:textSize="24dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/until"
@@ -102,15 +102,15 @@
             />
 
         <TextView
-            android:textSize="20dp"
+            android:textSize="24dp"
             android:id="@+id/howMany"
             style="@style/all_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="date" />
+             />
 
         <TextView
-            android:textSize="20dp"
+            android:textSize="24dp"
             style="@style/all_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

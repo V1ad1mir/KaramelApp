@@ -26,11 +26,12 @@ public class gallery extends AppCompatActivity {
 
         iw = (ImageView) findViewById(R.id.image2);
 
-
-
-
         butt = (Button) findViewById(R.id.b1);
-        butt.setOnClickListener(new View.OnClickListener() {
+
+
+
+
+        iw.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
@@ -39,9 +40,7 @@ public class gallery extends AppCompatActivity {
                         .setListener(new Animator.AnimatorListener() {
                             @Override
                             public void onAnimationStart(Animator animator) { }{
-                               iw.animate().alpha(0).setDuration(180);
-
-
+                                iw.animate().alpha(0).setDuration(180);
                             }
 
                             @Override
@@ -61,9 +60,39 @@ public class gallery extends AppCompatActivity {
                 i++;
                 if(i==7)
                     i=0;
+            }
+
+        });
+       // button click
+        butt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                iw.animate()
+
+                        .setListener(new Animator.AnimatorListener() {
+                            @Override
+                            public void onAnimationStart(Animator animator) { }{
+                               iw.animate().alpha(0).setDuration(180);
+                            }
+
+                            @Override
+                            public void onAnimationEnd(Animator animator) {
+                                //this 1 line for change picture
+                                iw.setImageResource(arr.images[i]);
+                                iw.animate().alpha(1).setDuration(90);
 
 
+                            }
+                            @Override
+                            public void onAnimationCancel(Animator animator) { }
+                            @Override
+                            public void onAnimationRepeat(Animator animator) { }
+                        });
 
+                i++;
+                if(i==7)
+                    i=0;
             }
         });
         Button button_back = (Button) findViewById(R.id.buttonBack);
