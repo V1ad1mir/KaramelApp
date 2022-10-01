@@ -1,7 +1,8 @@
 package com.example.karamelfinal;
 
+//Arrays for new game
 public class Array {
-    //Array for new game
+
     final int[] images1 = {
             R.drawable.nok2,
             R.drawable.nok3,
@@ -13,7 +14,6 @@ public class Array {
             R.drawable.kot2,
             R.drawable.kot1,
             R.drawable.kot3,
-
     };
 
     final int[] sounds = {
@@ -32,9 +32,4 @@ public class Array {
             R.drawable.cat6,
             R.drawable.cat7,
             R.drawable.cat_0};
-
-
-
-
-
 }

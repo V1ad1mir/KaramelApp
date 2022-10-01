@@ -141,7 +141,7 @@ public class kGame extends AppCompatActivity {
 
 
 //button back
-        Button button_back = (Button) findViewById(id.buttonBack);
+        Button button_back =  findViewById(id.buttonBack);
         button_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -172,10 +172,10 @@ public class kGame extends AppCompatActivity {
             imgRightDown = random.nextInt(10);
         }
         //to make new objects from activity
-        ImageView imageGame=(ImageView) findViewById(id.imageGame);
-        ImageView imageGame2=(ImageView) findViewById(id.imageGame2);
-        ImageView imageGame3=(ImageView) findViewById(id.imageGame3);
-        ImageView imageGame4=(ImageView) findViewById(id.imageGame4);
+        ImageView imageGame= findViewById(id.imageGame);
+        ImageView imageGame2= findViewById(id.imageGame2);
+        ImageView imageGame3= findViewById(id.imageGame3);
+        ImageView imageGame4= findViewById(id.imageGame4);
         //to take path for image
         imageGame.setImageResource(arr.images1[imgLeftTop]);
         imageGame2.setImageResource(arr.images1[imgRightTop]);
@@ -339,8 +339,6 @@ public class kGame extends AppCompatActivity {
             }
         });
 
-
-
     }
 
 
@@ -354,9 +352,6 @@ public class kGame extends AppCompatActivity {
         outState.putString(TEXTVIEW_STATE_KEY, myTextView.getText().toString());
 
     }
-
-
-
 
 
 
@@ -464,8 +459,6 @@ public class kGame extends AppCompatActivity {
 
         }
     }
-
-
 
 
 }

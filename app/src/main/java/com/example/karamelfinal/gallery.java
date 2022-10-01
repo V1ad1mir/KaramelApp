@@ -10,25 +10,18 @@ import android.widget.ImageView;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class gallery extends AppCompatActivity {
-
     ImageView iw;
     Button butt;
-    int i=0;
-
-    final Array arr = new Array();//new object from class array
-
-
+    int i=0; //global value
+    Array arr = new Array();//new object from class array
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.galery);
 
-        iw = (ImageView) findViewById(R.id.image2);
-
-        butt = (Button) findViewById(R.id.b1);
-
-
+        iw = findViewById(R.id.image2);
+        butt = findViewById(R.id.b1);
 
 
         iw.setOnClickListener(new View.OnClickListener() {
@@ -36,18 +29,17 @@ public class gallery extends AppCompatActivity {
             public void onClick(View view) {
 
                 iw.animate()
-
                         .setListener(new Animator.AnimatorListener() {
                             @Override
                             public void onAnimationStart(Animator animator) { }{
-                                iw.animate().alpha(0).setDuration(180);
+                                iw.animate().alpha(0).setDuration(100);
                             }
 
                             @Override
                             public void onAnimationEnd(Animator animator) {
                                 //this 1 line for change picture
                                 iw.setImageResource(arr.images[i]);
-                                iw.animate().alpha(1).setDuration(90);
+                                iw.animate().alpha(1).setDuration(50);
 
 
                             }
@@ -68,34 +60,29 @@ public class gallery extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                iw.animate()
-
-                        .setListener(new Animator.AnimatorListener() {
-                            @Override
+                iw.animate().setListener(new Animator.AnimatorListener() {
+                    @Override
                             public void onAnimationStart(Animator animator) { }{
-                               iw.animate().alpha(0).setDuration(180);
+                               iw.animate().alpha(0).setDuration(100);
                             }
 
                             @Override
                             public void onAnimationEnd(Animator animator) {
                                 //this 1 line for change picture
                                 iw.setImageResource(arr.images[i]);
-                                iw.animate().alpha(1).setDuration(90);
-
-
+                                iw.animate().alpha(1).setDuration(50);
                             }
                             @Override
                             public void onAnimationCancel(Animator animator) { }
                             @Override
                             public void onAnimationRepeat(Animator animator) { }
                         });
-
-                i++;
-                if(i==7)
+                i++; //for picture change
+                if(i==arr.images.length)
                     i=0;
             }
         });
-        Button button_back = (Button) findViewById(R.id.buttonBack);
+        Button button_back = findViewById(R.id.buttonBack);
         button_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
